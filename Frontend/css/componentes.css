@@ -1,0 +1,315 @@
+.logoSitio, .enlaceMenu{
+    color:var(--colorBlanco);
+    text-decoration: none;
+}
+.logoSitio{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.enlaceMenu{
+    padding-block: 0.25rem;
+    border-bottom: 2px solid transparent;
+}
+.enlaceMenu:hover, .enlaceMenu:focus-visible{
+    border-bottom-color: var(--colorResaltado);
+}
+.tituloPortada{
+    margin:0 0 var(--espacioMedio);
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.2;
+    color: var(--colorPrimarioOscuro);
+}
+.textoDestacado{
+    max-width: 40rem;
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--colorTextoSuave);
+}
+.tituloSeccion{
+    margin: 0 0 var(--espacioMedio);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.2;
+    color: var(--colorPrimarioOscuro);
+    text-align: center;
+}
+.textoSeccion{
+    max-width: 65ch;
+    margin: 0 0 var(--espacioMedio);
+    color:var(--colorTextoSuave);
+}
+.itemDestacado{
+    padding:var(--espacioGrande) ;
+    background: var(--colorFondoSuave);
+    border-radius: calc(var(--radioBorde)*3);
+}
+
+.tituloDestacado{
+    margin: 0 0 var(--espacioChico);
+    font-size: 1.25rem;
+}
+.itemDestacado p{
+    margin:0;
+    color: var(--colorTextoSuave);
+}
+
+.botonPrincipal, .botonEnviar{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font: inherit;
+    font-weight: 700;
+    color: var(--colorBlanco);
+    background: var(--colorPrimario);
+    border: 0;
+    border-radius: var(--radioBorde);
+    cursor: pointer;
+}
+.botonEnviar:hover, 
+.botonPrincipal:hover{
+    background: var(--colorPrimarioOscuro);
+}
+.hojaEjemplo{
+    margin: 0;
+    overflow-x: auto;
+    background: var(--colorBlanco);
+    border: 1px solid var(--colorBorde);
+    box-shadow: 6px 6px 0 var(--colorPrimario);
+}
+
+.barraFormula{
+    display: flex;
+    gap: var(--espacioMedio);
+    padding: 0.5rem 0.75rem;
+    font-family: var(--fuentesNumeros);
+    font-size: 0.95rem;
+    background: var(--colorEncabezadoHoja);
+    border-bottom: 1px solid var(--colorBorde);
+}
+.nombreCelda{
+    padding-right: var(--espacioMedio);
+    border-right: 1px solid var(--colorBorde);
+    font-weight: 700;
+}
+.tablaHoja{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tablaHoja th,
+.tablaHoja td {
+    padding:  0.4rem 0.75rem;
+    border: 1px solid var(--colorBorde);
+    text-align: left;
+}
+.tablaHoja thead th,
+.tablaHoja tbody th{
+    font-weight: 400;
+    text-align: center;
+    color: var(--colorTextoSuave);
+    background: var(--colorEncabezadoHoja);
+}
+.celdaEncabezado,
+.celdaTotal{
+    font-weight: 700;
+}
+.celdaSeleccionada{
+    font-family: var(--fuentesNumeros);
+    font-weight: 700;
+    background: var(--colorResaltado);
+    outline: 2px solid var(--colorPrimario);
+    outline-offset: -2px;
+}
+.iconoDestacado{
+    box-sizing: content-box;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: var(--espacioChico);
+    padding: 0.75rem;
+    color: var(--colorPrimario);
+    background: var(--colorBlanco);
+    border-radius: 50%;
+}
+.seccionGaleria  .textoSeccion{
+    margin-inline: auto;
+    text-align: center;
+}
+.figuraGaleria{
+    margin: 0;
+}
+.imagenGaleria{
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: contain;
+    background: var(--colorBlanco);
+    border:1px solid var(--colorBorde);
+}
+.descripcionImagen{
+    padding-top: var(--espacioChico);
+    text-align: center;
+    color: var(--colorTextoSuave);
+}
+.tituloImagen{
+    display: block;
+    font-weight: 700;
+    color: var(--colorTexto);
+}
+.textoImagen{
+    display: block;
+    max-width: 40rem;
+    margin-inline: auto;
+}
+.botonCarrusel{
+    width: 2.75rem;
+    height: 2.75rem;
+    font: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--colorBlanco);
+    background: var(--colorPrimario);
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.botonCarrusel:hover:not(:disabled){
+    background: var(--colorPrimarioOscuro);
+}
+.botonCarrusel:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.botonCarrusel:focus-visible{
+    outline: 3px solid var(--colorPrimario);
+    outline-offset: 2px;
+}
+.contadorCarrusel{
+    min-width: 5rem;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+}
+.puntosCarrusel{
+    display: flex;
+    gap: 0.25rem;
+}
+.puntoCarrusel{
+    display: grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+.puntoCarrusel::before{
+    content: '';
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid var(--colorPrimario);
+    border-radius: 50%;
+}
+.puntoCarrusel:hover::before{
+    background: var(--colorResaltado);
+}
+.puntoCarrusel[aria-current="true"]::before{
+    background: var(--colorPrimario);
+}
+.puntoCarrusel:focus-visible{
+    outline: 3px solid var(--colorPrimario);
+    outline-offset: 2px;
+}
+.formularioComentarios{
+    max-width: 36rem;
+    margin-top: var(--espacioGrande);
+}
+.campoFormulario{
+    margin-bottom: var(--espacioMedio);
+}
+.zonaListaComentarios{
+    margin-top: var(--espacioEnorme);
+}
+.listaComentario{
+    display: grid;
+    gap: var(--espacioMedio);
+    max-width: 40rem;
+}
+.etiquetaCampo{
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+.entradaTexto,
+.areaTexto{
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font: inherit;
+    color: var(--colorTexto);
+    border: 1px solid var(--colorTextoSuave);
+    border-radius: var(--radioBorde);
+}
+.areaTexto{
+    resize: vertical;
+}
+
+.entradaTexto:focus-visible,
+.areaTexto:focus-visible,
+.botonEnviar:focus-visible,
+.botonPrincipal:focus-visible{
+    outline: 3px solid var(--colorPrimario);
+    outline-offset: 2px;
+}
+.tituloLista{
+    margin: 0 0 var(--espacioMedio);
+    font-size: 1.25rem;
+}
+.mensajeVacio{
+    padding: var(--espacioMedio);
+    color: var(--colorTextoSuave);
+    background: var(--colorFondoSuave);
+    border: 1px dashed var(--colorBorde)
+}
+.textoPie{
+    margin: 0;
+}
+
+.enlaceVolverArriba{
+    color: var(--colorBlanco);
+}
+.enlaceVolverArriba:hover{
+    color: var(--colorResaltado);
+}
+.enlaceVolverArriba:focus-visible{
+    outline: 3px solid var(--colorResaltado);
+}
+.textoPie{
+    margin: 0;
+}
+.itemComentario{
+    padding: var(--espacioMedio);
+    background: var(--colorFondoSuave);
+    border-radius: calc(--radioBorde);
+}
+.autorComentario{
+    margin: 0;
+    font-width: 700;
+}
+.fechaComentario{
+    display: block;
+    font-size: 0.875rem;
+    color: var(--colorTextoSuave);
+}
+.textoComentarioPublicado{
+    margin: var(--espacioChico) 0 0;
+    overflow-wrap: anywhere;
+}
+.mensajeFormulario{
+    min-height: 1.5rem;
+    margin: var(--espacioMedio) 0 0;
+    font-weight: 700;
+}
+.mensajeExito{
+    color: var(--colorPrimarioOscuro);
+}
+.mensajeError{
+    color: var(--colorError);
+}

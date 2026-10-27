@@ -1,0 +1,55 @@
+:root{
+    --colorPrimario:#1d6f42;
+    --colorPrimarioOscuro:#14502f;
+    --colorFondoSuave:#f6f9f7;
+    --colorBorde:#cfdad3;
+    --colorTexto:#19261f;
+    --colorTextoSuave:#4d5f55;
+    --colorResaltado:#ffe58a;
+    --colorBlanco:#ffffff;
+
+    --fuentePrincipal:Calibri, "Segeo UI", system-ui, sans-serif;
+
+    --espacioChico:0.5rem;
+    --espacioMedio:1rem;
+    --espacioGrande:2rem;
+    --espacioEnorme:4rem;
+
+    --anchoMaximo:70rem;
+    --alturaEncabezado:4rem;
+
+    --radioBorde:4px;
+
+    --colorEncabezadoHoja:#e4ece7;
+    --fuentesNumeros:Consolas, "Courier New", monospace;
+    --colorError:#b3261e;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--colorTexto);
+    background: var(--colorBlanco);
+}
+imagen{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--alturaEncabezado);
+}

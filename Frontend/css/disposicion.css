@@ -1,0 +1,91 @@
+.encabezadoSitio{
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espacioChico) var(--espacioGrande);
+    min-height: var(--alturaEncabezado);
+    padding: var(--espacioChico) var(--espacioGrande);
+    background: var(--colorPrimario);
+    
+
+}
+.listaMenu{
+    display: flex;
+    gap:var(--espacioGrande);
+}
+.seccionPortada{
+    background: var(--colorFondoSuave);
+    background-image: linear-gradient(var(--colorBorde) 1px, transparent 1px), linear-gradient(90deg, var(--colorBorde) 1px, transparent 1px);
+    background-size: 44px 28px;
+}
+.contenidoPortada{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: var(--espacioEnorme);
+    align-items: center;
+}
+.textoPortada .botonPrincipal{
+    margin-top: var(--espacioGrande);
+}
+.controlesCarrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:var(--espacioMedio);
+    margin-top: var(--espacioMedio);
+}
+
+.seccionComentarios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: var(--espacioEnorme);
+    align-items: start;
+}
+.seccionPortada, 
+.seccionIntroduccion, 
+.seccionGaleria,
+.seccionComentarios{
+    padding-block: var(--espacioEnorme);
+    padding-inline: max(var(--espacioGrande), calc((100% - var(--anchoMaximo))/2))
+}
+.seccionGaleria{
+    background: var(--colorFondoSuave);
+}
+.listaDestacados{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap:var(--espacioGrande);
+    margin-top: var(--espacioGrande);
+}
+.carruselGaleria{
+    display: flex;
+    gap: var(--espacioGrande);
+    margin-top: var(--espacioGrande);
+    padding-bottom: var(--espacioChico);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    max-width: 56rem;
+    margin-inline: auto;
+}
+.carruselGaleria::-webkit-scrollbar{
+    display: none;
+}
+.carruselGaleria .figuraGaleria{
+    flex: 0 0 min(100%);
+    scroll-snap-align: start;
+}
+.pieSitio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espacioMedio);
+    padding-block: var(--espacioGrande);
+    padding-inline: max(var(--espacioGrande), calc((100% - var(--anchoMaximo))/2));
+    color: var(--colorBlanco);
+    background: var(--colorPrimarioOscuro);
+}

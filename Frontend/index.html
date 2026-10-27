@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/utilidades.css">
+    <link rel="stylesheet" href="css/disposicion.css">
+    <link rel="stylesheet" href="css/componentes.css">
+</head>
+
+<body>
+    <header class="encabezadoSitio">
+        <a class="logoSitio" href="#inicio">Mi pasión por Excel</a>
+        <nav class="menuPrincipal" aria-label="Navegación principal">
+            <ul class="listaMenu">
+                <li><a class="enlaceMenu" href="#introduccion">Introducción</a></li>
+                <li><a class="enlaceMenu" href="#galeria">Galería</a></li>
+                <li><a class="enlaceMenu" href="#comentarios">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenidoPrincipal">
+        <section class="seccionPortada" id="Inicio" aria-labelledby="tituloPortada">
+            <div class="contenidoPortada">
+
+                <div class="textoPortada">
+                    <h1 class="tituloPortada" id="tituloPortada">Convierto datos en decisiones</h1>
+                    <p class="textoDestacado">Excel es mi hobby favorito: organizo información, creo fórmulas y
+                        construyo tableros que se entienden de un vistazo</p>
+                    <a class="botonPrincipal" href="#comentarios">Comparte tu truco favorito</a>
+                </div>
+                <figure class="hojaEjemplo">
+                    <div class="barraFormula">
+                        <span class="nombreCelda">C5</span>
+                        <span class="formulaCelda">=SUMA(C2:C4)</span>
+                    </div>
+
+                    <table class="tablaHoja">
+                        <caption class="soloLectores">Ejemplo de hoja de cálculo con ventas por producto y su total
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th scope="col"><span class="soloLectores">Fila</span></th>
+                                <th class="col">A</th>
+                                <th class="col">B</th>
+                                <th class="col">C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td class="celdaEncabezado">Producto</td>
+                                <td class="celdaEncabezado">Unidades</td>
+                                <td class="celdaEncabezado">Ventas</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nevera</td>
+                                <td>12</td>
+                                <td>$ 14.400</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Licuadora</td>
+                                <td>30</td>
+                                <td>$ 3.900</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Ventilador</td>
+                                <td>18</td>
+                                <td>$ 2.700</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td class="celdaTotal">Total</td>
+                                <td></td>
+                                <td class="celdaSeleccionada">$ 21.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </figure>
+            </div>
+        </section>
+
+        <section class="seccionIntroduccion" id="introduccion" aria-labelledby="tituloIntroducion">
+            <h2 class="tituloSeccion" id="tituloIntroduccion">Qué es Excel y por qué me gusta</h2>
+            <p>Excel es un programa de hojas de cálculo. Sirve para guardar datos en tablas, hacer cuentas automáticas y
+                mostrar resultados con gráficos. Me gusta porque cada problema tiene varias formas de resolverse y siempre
+                se aprende un atajo nuevo.</p>
+            <ul class="listaDestacados">
+                <li class="itemDestacado">
+                    <svg class="iconoDestacado" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path class="iconoDestacado" aria-hidden="true" focusable="false" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 0 1-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0 1 12 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+                    </svg>
+                    <h3 class="tituloDestacado">Datos ordenados</h3>
+                    <p>Tablas y filtros para que la información sea confiable.</p>
+                </li>
+                <li class="itemDestacado">
+                    <svg class="iconoDestacado" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
+                    </svg>
+
+                    <h3 class="tituloDestacado">Fórmulas y funciones</h3>
+                    <p class="tituloDestacado">SUMA, BUSCARV y SI hacen el trabajo repetitivo por mí.</p>
+                </li>
+                <li class="itemDestacado">
+                    <svg class="iconoDestacado" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0 0 20.25 18V6A2.25 2.25 0 0 0 18 3.75H6A2.25 2.25 0 0 0 3.75 6v12A2.25 2.25 0 0 0 6 20.25Z" />
+                    </svg>
+
+                    <h3 class="tituloDestacado">Gráficos y tableros</h3>
+                    <p>Los números se vuelven imágenes claras para decidir.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="seccionGaleria" id="galeria" aria-labelledby="tituloGaleria">
+            <h2 class="tituloSeccion" id="tituloGaleria">Galería de trabajos</h2>
+            <p class="textoSeccion">Capturas de un dashboard de ventas que construí en Excel. Primero se ve completo y
+                luego cada parte en detalle. Usa las flechas o los puntos para recorrerlo. </p>
+            <div class="carruselGaleria" role="region" aria-roledescription="carrusel"
+                aria-label="Galería de trabajos en Excel" tabindex="0">
+                <figure class="figuraGaleria">
+                    <img class="imagenGaleria" src="img/dashboard-completo.png"
+                        alt="Dashboard de ventas en Excel con indicadores y gráficos" width="640" height="420"
+                        loading="lazy" />
+
+                    <figcaption class="descripcionImagen">
+                        <strong class="tituloImagen">Dashboard Completo</strong>
+                        <span class="textoImagen">Vista general con ventas totales, unidades y vendedores, junto a todos
+                            los gráficos en una sola hoja.</span>
+                    </figcaption>
+                </figure>
+                <figure class="figuraGaleria">
+                    <img class="imagenGaleria" src="img/filtros-dashboard.png" alt="Filtros del Dashboard" width="640"
+                        height="420" loading="lazy" />
+
+                    <figcaption class="descripcionImagen">
+                        <strong class="tituloImagen">Filtros interactivos</strong> <span
+                            class="textoImagen">Segmentaciones por región, categoría y fechas: con un clic todo el
+                            tablero se actualiza.</span>
+                    </figcaption>
+
+                </figure>
+                <figure class="figuraGaleria">
+                    <img class="imagenGaleria" src="img/ventas-por-region.png" alt="Ventas por región del Dashboard"
+                        width="640" height="420" loading="lazy" />
+                    <figcaption class="descripcionImagen">
+                        <strong class="tituloImagen">Ventas por región</strong>
+                        <span class="textoImagen">Comparación de las ventas de las cuatro regiones, con la región líder
+                            destacada.</span>
+                    </figcaption>
+                </figure>
+                <figure class="figuraGaleria">
+                    <img class="imagenGaleria" src="img/ventas-por-categoria.png"
+                        alt="Ventas por categoría del Dashboard" width="640" height="420" loading="lazy" />
+
+                    <figcaption class="descripcionImagen">
+                        <strong class="tituloImagen">Venta por categoría</strong>
+                        <span class="textoImagen">Participación de cada categoría de producto en el total
+                            vendido.</span>
+                    </figcaption>
+                </figure>
+                <figure class="figuraGaleria">
+                    <img class="imagenGaleria" src="img/ventas-en-el-tiempo.png" alt="Ventas en el tiempo del Dashboard"
+                        width="640" height="420" loading="lazy" />
+                    <figcaption class="descripcionImagen">
+                        <strong class="tituloImagen">Ventas en el tiempo</strong>
+                        <span class="textoImagen">Evolución mensual de las ventas para detectar los meses más altos y
+                            más bajos.</span>
+                    </figcaption>
+                </figure>
+                <figure class="figuraGaleria">
+                    <img class="imagenGaleria" src="img/top-5-vendedores.png" alt="Top 5 vendedores del Dashboard"
+                        width="640" height="420" loading="lazy" />
+                    <figcaption class="descripcionImagen">
+                        <strong class="tituloImagen">Top 5 vendedores</strong>
+                        <span class="textoImagen">Ranking de los cinco vendedores con mayores ventas.</span>
+                    </figcaption>
+
+                </figure>
+            </div>
+            <div class="controlesCarrusel">
+                <button class="botonCarrusel" type="button" id="botonAnterior" aria-label="Imagen anterior">
+                    <span aria-hidden="true">&lsaquo;</span>
+                </button>
+                <div class="puntosCarrusel" id="puntosCarrusel"></div>
+                <button class="botonCarrusel" type="button" id="botonSiguiente" aria-label="Imagen siguiente">
+                    <span aria-hidden="true">&rsaquo;</span>
+                </button>
+            </div>
+            <p class="soloLectores" id="contadorCarrusel" aria-live="polite">1 de 6</p>
+
+        </section>
+        <section class="seccionComentarios" id="comentarios" aria-labelledby="tituloComentarios">
+            <div class="columnaFormulario">
+                <h2 class="tituloSeccion" id="tituloComentarios">Comparte tu truco de Excel</h2>
+                <p class="textoSeccion">Cuéntame qué función o atajo usas más. Tu comentario aparecerá en esta misma
+                    página.
+                </p>
+                <form class="formularioComentarios" id="formularioComentarios" action="">
+                    <div class="campoFormulario">
+                        <label class="etiquetaCampo" for="nombreAutor">Nombre</label>
+                        <input class="entradaTexto" type="text" id="nombreAutor" name="nombreAutor" maxlength="40"
+                            autocomplete="given-name" required>
+                    </div>
+                    <div class="campoFormulario">
+                        <label class="etiquetaCampo" for="textoComentario">Tu comentario</label>
+                        <textarea class="areaTexto" name="textoComentario" id="textoComentario" rows="4" maxlength="300"
+                            required></textarea>
+
+                        <button class="botonEnviar" type="submit">Publicar comentario</button>
+                        <p class="mensajeFormulario" id="mensajeFormulario" role="status"></p>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="zonaListaComentarios">
+                <h3 class="titulolista">Comentarios publicados</h3>
+                <ul class="listaComentarios" id="listaComentarios" aria-live="polite">
+                    <li class="mensajeVacio">Aún no hay comentarios. Escribe el primero</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="pieSitio">
+        <p>Proyecto académico. Asturias Corporación Universitaria</p>
+        <a class="enlaceVolverArriba" href="#inicio">Volver arriba</a>
+    </footer>
+    <script type="module" src="js/principal.js"></script>
+</body>
+
+</html>
