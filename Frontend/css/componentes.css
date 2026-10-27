@@ -346,10 +346,13 @@
     .seccionPortada,
     .seccionIntroduccion,
     .seccionGaleria,
-    .seccionComentario{
+    .seccionComentarios{
         padding-block: var(--espacioGrande);
     }
-    .seccionComentario{
-        gap: var(--espacioGrande);
+    .seccionComentarios{
+        gap: var(--espacioChico);
+    }
+    .zonaListaComentarios{
+        margin: auto;
     }
 }

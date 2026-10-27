@@ -50,7 +50,10 @@
 .seccionGaleria,
 .seccionComentarios{
     padding-block: var(--espacioEnorme);
-    padding-inline: max(var(--espacioGrande), calc((100% - var(--anchoMaximo))/2))
+    padding-inline: max(
+        var(--espacioGrande),
+        calc((100% - var(--anchoMaximo)) / 2)
+    );
 }
 .seccionGaleria{
     background: var(--colorFondoSuave);
