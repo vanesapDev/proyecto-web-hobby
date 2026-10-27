@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excel</title>
+    <meta name="description" content="Página personal sobre Excel: tablero de ventas, tablas dinámicas y fórmulas. Mira mi galería de trabajos y comparte tu truco favorito ">
+    <link rel="canonical" href="https://gentle-eclair-926ee6.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:title" content="Mi pasión por Excel">
+    <meta property="og:description" content="Tablero de ventas, tablas dinámicas y fórmulas. Mira mi galería y comparte tu truco favorito">
+    <meta property="og:url" content="https://gentle-eclair-926ee6.netlify.app/">
+    <title>Mi pasión por Excel | Tablero, fórmula y gráficos</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/utilidades.css">
@@ -24,7 +31,7 @@
         </nav>
     </header>
     <main class="contenidoPrincipal">
-        <section class="seccionPortada" id="Inicio" aria-labelledby="tituloPortada">
+        <section class="seccionPortada" id="inicio" aria-labelledby="tituloPortada">
             <div class="contenidoPortada">
 
                 <div class="textoPortada">
@@ -87,7 +94,7 @@
             </div>
         </section>
 
-        <section class="seccionIntroduccion" id="introduccion" aria-labelledby="tituloIntroducion">
+        <section class="seccionIntroduccion" id="introduccion" aria-labelledby="tituloIntroduccion">
             <h2 class="tituloSeccion" id="tituloIntroduccion">Qué es Excel y por qué me gusta</h2>
             <p>Excel es un programa de hojas de cálculo. Sirve para guardar datos en tablas, hacer cuentas automáticas y
                 mostrar resultados con gráficos. Me gusta porque cada problema tiene varias formas de resolverse y siempre
@@ -210,7 +217,7 @@
                 <p class="textoSeccion">Cuéntame qué función o atajo usas más. Tu comentario aparecerá en esta misma
                     página.
                 </p>
-                <form class="formularioComentarios" id="formularioComentarios" action="">
+                <form class="formularioComentarios" id="formularioComentarios">
                     <div class="campoFormulario">
                         <label class="etiquetaCampo" for="nombreAutor">Nombre</label>
                         <input class="entradaTexto" type="text" id="nombreAutor" name="nombreAutor" maxlength="40"
@@ -239,7 +246,7 @@
     </main>
     <footer class="pieSitio">
         <p>Proyecto académico. Asturias Corporación Universitaria</p>
-        <a class="enlaceVolverArriba" href="#inicio">Volver arriba</a>
+        <a class="enlaceVolverArriba" href="#inicio">Volver arriba <span class="flechaArriba" aria-hidden="true">&uarr;</span></a>
     </footer>
     <script type="module" src="js/principal.js"></script>
 </body>
